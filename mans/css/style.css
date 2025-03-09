@@ -1,0 +1,44 @@
+/* style.css */
+
+body {
+    background: linear-gradient(to bottom, #0a0a23, #000033);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #dadada;
+    font-weight: bold;
+}
+
+.image-preview {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.clothes-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.clothes-item img {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.clothes-item img:hover {
+    transform: scale(1.1);
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
