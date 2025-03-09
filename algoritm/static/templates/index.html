@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStyle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>SmartStyle: Yuzga Mos Kiyim Tavsiyasi</h1>
+
+    <input type="file" id="imageUpload" accept="image/*">
+    <button onclick="uploadImage()">Rasmni Yuklash</button>
+
+    <h3>Natijalar:</h3>
+    <p><strong>Yuz shakli:</strong> <span id="faceShape"></span></p>
+    <p><strong>Teri rangi:</strong> <span id="skinTone"></span></p>
+    <h3>Tavsiya etilgan kiyimlar:</h3>
+    <ul id="clothingList"></ul>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
